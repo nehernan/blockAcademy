@@ -1,0 +1,11 @@
+@use 'vars' as v;
+@import 'mixins';
+h1 {
+    @include fontStyle(v.$f-extra-big, v.$xl-bold, v.$c-primary);
+    font-family: v.$font-primary;
+}
+
+p {
+    @include fontStyle(v.$f-xmedium, v.$regular, v.$c-primary);
+    font-family: v.$font-secundary;
+}

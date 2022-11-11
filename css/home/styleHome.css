@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Titillium+Web:wght@600&display=swap");
+/* ----- FONT-FAMILY ----- */
+/* ----- SIZE----- */
+/* ----- WEIGHT ----- */
+/* ----- COLORS----- */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #122024;
+  font-family: "Titillium";
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #122024;
+  font-family: "Inter";
+}
+
+/*# sourceMappingURL=styleHome.css.map */
