@@ -1,4 +1,4 @@
-@import 'scss/style.scss';
-h1 {
-    font-size: 20px;
-}
+@use 'home';
+@forward 'vars';
+@forward 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Titillium+Web:wght@600&display=swap');
