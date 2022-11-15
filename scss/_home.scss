@@ -1,11 +1,180 @@
 @use 'vars' as v;
 @import 'mixins';
-h1 {
-    @include fontStyle(v.$f-extra-big, v.$xl-bold, v.$c-primary);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: v.$font-primary;
 }
 
-p {
-    @include fontStyle(v.$f-xmedium, v.$regular, v.$c-primary);
+.title {
+    @include fontStyle(v.$f-title-40, v.$xl-bold, v.$c-primary);
+}
+
+.subtitle {
+    @include fontStyle(v.$f-title, v.$bold, v.$c-primary);
+    line-height: 30px;
+}
+
+.text {
+    &-blue {
+        color: v.$c-blue;
+    }
+    &-gray {
+        color: v.$c-gray;
+    }
+    &-secondary {
+        font-family: v.$font-secundary;
+    }
+}
+
+.font {
+    &-primary {
+        font-family: v.$font-primary;
+    }
+    &-secondary {
+        font-family: v.$font-secundary;
+    }
+}
+
+.text-inter {
+    @include fontStyle(v.$f-medium, v.$normal, v.$c-primary);
     font-family: v.$font-secundary;
+    line-height: 22px;
+}
+
+.btn-generic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 56px;
+    font-size: v.$f-subtitle;
+    border-radius: 8px;
+}
+
+.navbar {
+    .navbar-brand img {
+        height: 2.2rem;
+        width: auto;
+        ;
+    }
+    .nav-link {
+        color: v.$c-white !important;
+    }
+}
+
+header {
+    height: 980px;
+    background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
+    .menssage {
+        height: 52px;
+        background-color: v.$c-primary;
+        p,
+        a {
+            color: v.$c-white;
+            font-size: v.$f-medium;
+            font-family: v.$font-secundary;
+            text-decoration: none;
+        }
+    }
+    .welcome {
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        color: v.$c-white;
+        margin-top: -80px;
+        &-title {
+            font-size: 4.4rem;
+        }
+        &-text {
+            @include fontStyle(v.$f-title, v.$bold, v.$c-white);
+            line-height: 30px;
+            &_sub {
+                @include fontStyle(v.$f-medium, v.$xl-bold, v.$c-white);
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+.promo {
+    background: v.$c-white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    overflow: hidden;
+    &-cash {
+        background: linear-gradient(180deg, #00EEA4 18.83%, #005BFC 100%);
+        color: v.$c-white;
+        &_circle {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(90deg, #00EEA4 0%, #005AFA 98%);
+            top: 85px;
+            right: 85px;
+            &::before {
+                content: '';
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background: linear-gradient(90deg, #00EEA4 0%, #005AFA 98%);
+            }
+        }
+        h2 {
+            font-size: 60px;
+            font-weight: v.$xl-bold;
+        }
+        p {
+            font-size: 50px;
+            font-weight: v.$normal;
+            font-family: v.$font-secundary;
+        }
+    }
+}
+
+section {
+    &.trainingCamps {
+        padding-top: 250px;
+    }
+}
+
+.trainingCamps {
+    &-info {
+        .title {
+            position: relative;
+            display: block;
+            &::before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 265px;
+                height: 3px;
+                background: linear-gradient(90deg, #005AFA 0%, #FF0000 100%);
+                bottom: -4px;
+                left: 0;
+            }
+        }
+    }
+    &-container_img {
+        border-radius: 24px;
+        overflow: hidden;
+        height: 390px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
 }
