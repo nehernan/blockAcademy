@@ -1,19 +1,271 @@
-/* Error: expected "{".
- *    ,
- * 36 | $c-grey-EB: #ebebeb;
- *    |                    ^
- *    '
- *   scss\vars.scss 36:20     @use
- *   scss\_home.scss 1:1      @use
- *   scss\styleHome.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 36 \2502  $c-grey-EB: #ebebeb;\d\a    \2502                     ^\a    \2575 \a   scss\\vars.scss 36:20     @use\a   scss\\_home.scss 1:1      @use\a   scss\\styleHome.scss 1:1  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Titillium+Web:wght@600&display=swap");
+/* ----- FONT-FAMILY ----- */
+/* ----- SIZE----- */
+/* ----- WEIGHT ----- */
+/* ----- COLORS----- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: "Titillium Web";
+  background-color: #ebebeb;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #122024;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #122024;
+  line-height: 30px;
+}
+
+.text-blue {
+  color: #9747ff;
+}
+.text-gray {
+  color: #888888;
+}
+.text-secondary {
+  font-family: "Inter";
+}
+
+.font-primary {
+  font-family: "Titillium Web";
+}
+.font-secondary {
+  font-family: "Inter";
+}
+
+.text-inter {
+  font-size: 16px;
+  font-weight: 400;
+  color: #122024;
+  font-family: "Inter";
+  line-height: 22px;
+}
+
+.btn-generic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 56px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.btn-red {
+  background-color: #FF0000;
+  color: #ffffff;
+}
+
+.navbar .navbar-brand img {
+  height: 2.2rem;
+  width: auto;
+}
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+
+header {
+  height: 960px;
+  background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
+}
+header .menssage {
+  height: 52px;
+  background-color: #122024;
+}
+header .menssage p,
+header .menssage a {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Inter";
+  text-decoration: none;
+}
+header .welcome {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  color: #ffffff;
+  margin-top: -80px;
+}
+header .welcome-title {
+  font-size: 4.4rem;
+}
+header .welcome-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 30px;
+}
+header .welcome-text_sub {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 18px;
+}
+
+.promo {
+  position: absolute;
+}
+.promo .container {
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.promo-cash {
+  background: linear-gradient(180deg, #00EEA4 18.83%, #005BFC 100%);
+  color: #ffffff;
+}
+.promo-cash_circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #00EEA4 0%, #005AFA 98%);
+  top: 85px;
+  right: 85px;
+}
+.promo-cash_circle::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #00EEA4 0%, #005AFA 98%);
+}
+.promo-cash h2 {
+  font-size: 60px;
+  font-weight: 700;
+}
+.promo-cash p {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Inter";
+}
+
+section {
+  margin-bottom: 5rem;
+}
+section.trainingCamps {
+  padding: 300px 0 5rem;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.trainingCamps-info .title {
+  position: relative;
+  display: block;
+}
+.trainingCamps-info .title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 265px;
+  height: 3px;
+  background: linear-gradient(90deg, #005AFA 0%, #FF0000 100%);
+  bottom: -4px;
+  left: 0;
+}
+.trainingCamps-container_img {
+  border-radius: 24px;
+  overflow: hidden;
+  height: 390px;
+}
+.trainingCamps-container_img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.trainingCamps .icon {
+  width: 40px;
+  height: 40px;
+}
+
+.list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.list .icon-list {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("/assets/img/icon-list.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 0.3rem;
+}
+
+.blockAcademy-info_image {
+  position: relative;
+  align-items: flex-end;
+}
+.blockAcademy-info_image .img-container {
+  width: 406px;
+  height: 595px;
+}
+.blockAcademy-info_image .img-container img {
+  object-fit: contain;
+}
+.blockAcademy-info_image::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 90%;
+  width: 300px;
+  border-radius: 150px 150px 0 0;
+  background: linear-gradient(180deg, #D9D9D9 0%, #0050FF 100%);
+  z-index: -1;
+}
+.blockAcademy-info_card {
+  position: relative;
+  border-left: 2px solid #9747ff;
+}
+.blockAcademy-info_card::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #9747ff;
+  left: -16px;
+}
+.blockAcademy-info_card.border-hidden {
+  border-color: transparent;
+}
+
+.certifiedTrainee {
+  margin-top: 200px;
+}
+.certifiedTrainee-info {
+  background-color: #122024;
+  border-radius: 24px;
+}
+.certifiedTrainee-image {
+  display: flex;
+  align-items: center;
+}
+.certifiedTrainee-image .img-container {
+  height: 150px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.certifiedTrainee-image .img-container img {
+  object-fit: contain;
+}
+
+/*# sourceMappingURL=styleHome.css.map */
