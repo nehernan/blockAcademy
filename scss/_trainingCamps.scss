@@ -13,7 +13,7 @@ p {
 button {
   &.ba-primary {
     @include fontStyle(v.$f-title, v.$xl-bold, v.$c-white);
-    background: v.$c-blue;
+    background: v.$c-blue-00;
     border-radius: 8px;
     &.btn-md {
       @include fontStyle(v.$f-medium, v.$bold, v.$c-white);
