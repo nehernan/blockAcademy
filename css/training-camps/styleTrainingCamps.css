@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Titillium+Web:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Titillium+Web:wght@200;300;400;600;700&display=swap");
 /* ----- FONT-FAMILY ----- */
 /* ----- SIZE----- */
 /* ----- WEIGHT ----- */
@@ -7,7 +7,7 @@ h1 {
   font-size: 28px;
   font-weight: 700;
   color: #122024;
-  font-family: "Titillium";
+  font-family: "Titillium Web";
 }
 
 p {
@@ -15,6 +15,301 @@ p {
   font-weight: 300;
   color: #122024;
   font-family: "Inter";
+}
+
+button.ba-primary {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #0050ff;
+  border-radius: 8px;
+}
+button.ba-primary.btn-md {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  height: 39px;
+}
+button.ba-primary.btn-md:hover {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  height: 39px;
+  background: #0039b4;
+}
+button.ba-primary.bg-white {
+  color: #122024;
+}
+button.ba-primary.bg-white:hover {
+  color: #122024;
+  background: rgba(255, 255, 255, 0.6392156863) !important;
+}
+button.ba-primary:hover {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #0039b4;
+}
+button.ba-secondary {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #585858;
+  border-radius: 8px;
+}
+button .tool-tip:before {
+  content: "";
+  width: 148.55px;
+  height: 39px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+}
+
+.tooltip {
+  transform: translate3d(805px, 255px, 0px) !important;
+}
+.tooltip .tooltip-inner {
+  font-size: 12px;
+  font-weight: 400;
+  color: #122024;
+  max-width: 238px;
+  height: 40px;
+  padding: 3px 8px;
+  text-align: left;
+  background: #ffffff !important;
+  border-radius: 8px;
+  line-height: 15px;
+}
+.tooltip .arrow:before {
+  border-top-color: #ffffff !important;
+}
+
+.btn:disabled {
+  background: #999999;
+}
+
+.btn:disabled:hover {
+  background: #999999 !important;
+}
+
+.section-hero {
+  background: #122024;
+}
+.section-hero h2 {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: #ebebeb;
+}
+.section-hero h4 {
+  font-family: "Titillium Web";
+  font-size: 22px;
+  font-weight: 600;
+  color: #ebebeb;
+  line-height: 30px;
+}
+.section-hero .card-course {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 5px 5px 10px rgba(12, 26, 75, 0.24);
+  border-radius: 20px;
+  padding: 8px;
+}
+.section-hero .card-course h3 {
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  color: #122024;
+}
+.section-hero .card-course p {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 500;
+  color: #122024;
+}
+
+.section-courses {
+  background: #e6efff;
+}
+.section-courses h2 {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: #122024;
+}
+.section-courses p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #122024;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 22px;
+}
+.section-courses p span {
+  font-weight: 600;
+}
+.section-courses .card-course {
+  background: #122024;
+  color: #ffffff;
+  border-radius: 20px;
+  max-width: 409px;
+}
+.section-courses .card-course .pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  color: #122024;
+  font-weight: 700;
+}
+.section-courses .card-course .text-green {
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 600;
+  color: #00eea4;
+}
+.section-courses .card-course .title-description {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.section-courses .card-course .description {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.section-admision h2 {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: #122024;
+}
+.section-admision h3 {
+  font-family: "Titillium Web";
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+}
+.section-admision p {
+  font-family: "Titillium Web";
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.section-accordion {
+  background: #ebebeb;
+}
+.section-accordion .accordion .card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(12, 26, 75, 0.24);
+}
+.section-accordion .accordion .card .card-header {
+  height: 69.55px;
+  border-bottom: none;
+  background: #ffffff;
+}
+.section-accordion .accordion .card .card-header button {
+  box-shadow: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #122024;
+}
+.section-accordion .accordion .card .card-header button img {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+.section-accordion .accordion .card .card-header button.collapsed img {
+  transform: rotate(360deg);
+}
+
+.footer {
+  background: #122024;
+}
+.footer .copy {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  font-style: normal;
+}
+.footer .menu {
+  list-style: none;
+}
+.footer .menu .menu-item a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 28px;
+}
+.footer .menu .menu-item a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+.footer .menu .menu-item.active a {
+  color: #00eea4;
+}
+.footer .circle-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.menu {
+  list-style: none;
+}
+.menu .menu-item a {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 28px;
+}
+.menu .menu-item a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+.menu .menu-item.active a {
+  color: #00eea4;
+}
+
+.text-green {
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 600;
+  color: #00eea4;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  color: #122024;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=styleTrainingCamps.css.map */

@@ -1,11 +1,300 @@
-@use 'vars' as v;
-@import 'mixins';
+@use "vars" as v;
+@import "mixins";
 h1 {
-    @include fontStyle(v.$f-extra-big, v.$xl-bold, v.$c-primary);
-    font-family: v.$font-primary;
+  @include fontStyle(v.$f-extra-big, v.$xl-bold, v.$c-primary);
+  font-family: v.$font-primary;
 }
 
 p {
-    @include fontStyle(v.$f-xmedium, v.$regular, v.$c-primary);
+  @include fontStyle(v.$f-xmedium, v.$regular, v.$c-primary);
+  font-family: v.$font-secundary;
+}
+
+button {
+  &.ba-primary {
+    @include fontStyle(v.$f-title, v.$xl-bold, v.$c-white);
+    background: v.$c-blue;
+    border-radius: 8px;
+    &.btn-md {
+      @include fontStyle(v.$f-medium, v.$bold, v.$c-white);
+      height: 39px;
+    }
+    &.btn-md:hover {
+      @include fontStyle(v.$f-medium, v.$bold, v.$c-white);
+      height: 39px;
+      background: #0039b4;
+    }
+    &.bg-white {
+      color: v.$c-primary;
+    }
+    &.bg-white:hover {
+      color: v.$c-primary;
+      background: #ffffffa3 !important;
+    }
+  }
+  &.ba-primary:hover {
+    @include fontStyle(v.$f-title, v.$xl-bold, v.$c-white);
+    background: #0039b4;
+  }
+  &.ba-secondary {
+    @include fontStyle(v.$f-title, v.$xl-bold, v.$c-white);
+    background: v.$c-grey-dark-58;
+    border-radius: 8px;
+  }
+  .tool-tip:before {
+    content: "";
+    width: 148.55px;
+    height: 39px;
+    background: transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+  }
+}
+.tooltip {
+  transform: translate3d(805px, 255px, 0px) !important;
+  .tooltip-inner {
+    @include fontStyle(v.$f-xregular, v.$normal, v.$c-primary);
+    max-width: 238px;
+    height: 40px;
+    padding: 3px 8px;
+    text-align: left;
+    background: v.$c-white !important;
+    border-radius: 8px;
+    line-height: 15px;
+  }
+  .arrow:before {
+    border-top-color: v.$c-white !important;
+  }
+}
+
+.btn:disabled {
+  background: #999999;
+}
+.btn:disabled:hover {
+  background: #999999 !important;
+}
+
+.section-hero {
+  background: v.$c-primary;
+
+  h2 {
+    font-family: v.$font-primary;
+    font-style: normal;
+    font-weight: v.$xl-bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: v.$c-grey-EB;
+  }
+
+  h4 {
+    font-family: v.$font-primary;
+    @include fontStyle(v.$f-title, v.$bold, v.$c-grey-EB);
+    line-height: 30px;
+  }
+
+  .card-course {
+    position: absolute;
+    background: v.$c-white;
+    box-shadow: 5px 5px 10px rgba(12, 26, 75, 0.24);
+    border-radius: 20px;
+    padding: 8px;
+    h3 {
+      font-family: v.$font-secundary;
+      @include fontStyle(v.$f-title, v.$bold, v.$c-primary);
+    }
+    p {
+      font-family: v.$font-secundary;
+      @include fontStyle(v.$f-big, v.$medium, v.$c-primary);
+    }
+  }
+}
+
+.section-courses {
+  background: v.$c-blue-sky-E6;
+
+  h2 {
+    font-family: v.$font-primary;
+    font-style: normal;
+    font-weight: v.$xl-bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: v.$c-primary;
+  }
+
+  p {
+    @include fontStyle(v.$f-medium, v.$normal, v.$c-primary);
     font-family: v.$font-secundary;
+    font-style: normal;
+    line-height: 22px;
+    span {
+      font-weight: v.$bold;
+    }
+  }
+
+  .card-course {
+    background: v.$c-primary;
+    color: v.$c-white;
+    border-radius: 20px;
+    max-width: 409px;
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0 10px;
+      background: v.$c-white;
+      border-radius: 4px;
+      color: v.$c-primary;
+      font-weight: v.$xl-bold;
+    }
+
+    .text-green {
+      font-family: v.$font-primary;
+      @include fontStyle(v.$f-medium, v.$bold, v.$c-secondary);
+    }
+
+    .title-description {
+      font-family: v.$font-secundary;
+      @include fontStyle(v.$f-medium, v.$normal, v.$c-white);
+    }
+
+    .description {
+      font-family: v.$font-secundary;
+      @include fontStyle(v.$f-xmedium, v.$normal, v.$c-white);
+    }
+  }
+}
+
+.section-admision {
+  h2 {
+    font-family: v.$font-primary;
+    font-style: normal;
+    font-weight: v.$xl-bold;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    color: v.$c-primary;
+  }
+
+  h3 {
+    font-family: v.$font-primary;
+    font-weight: v.$xl-bold;
+    font-size: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    font-family: v.$font-primary;
+    font-weight: v.$bold;
+    font-size: v.$f-title;
+    line-height: 30px;
+  }
+}
+
+.section-accordion {
+  background: v.$c-grey-EB;
+
+  .accordion {
+    .card {
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(12, 26, 75, 0.24);
+      .card-header {
+        height: 69.55px;
+        border-bottom: none;
+        background: v.$c-white;
+        button {
+          box-shadow: none;
+          text-decoration: none;
+          @include fontStyle(v.$f-big, v.$medium, v.$c-primary);
+          img {
+            transform: rotate(180deg);
+            transition: all 0.3s ease;
+          }
+          &.collapsed {
+            img {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: v.$c-primary;
+
+  .copy {
+    font-family: v.$font-secundary;
+    @include fontStyle(v.$f-xmedium, v.$normal, v.$c-white);
+    font-style: normal;
+  }
+
+  .menu {
+    list-style: none;
+    .menu-item {
+      a {
+        font-family: v.$font-secundary;
+        @include fontStyle(v.$f-medium, v.$normal, v.$c-white);
+        line-height: 28px;
+        &:hover {
+          text-decoration: none;
+          opacity: 0.6;
+        }
+      }
+      &.active {
+        a {
+          color: v.$c-secondary;
+        }
+      }
+    }
+  }
+
+  .circle-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    background: v.$c-white;
+    border-radius: 50%;
+  }
+}
+
+.menu {
+  list-style: none;
+  .menu-item {
+    a {
+      font-family: v.$font-secundary;
+      @include fontStyle(v.$f-xmedium, v.$normal, v.$c-white);
+      line-height: 28px;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.6;
+      }
+    }
+    &.active {
+      a {
+        color: v.$c-secondary;
+      }
+    }
+  }
+}
+
+.text-green {
+  font-family: v.$font-primary;
+  @include fontStyle(v.$f-medium, v.$bold, v.$c-secondary);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  background: v.$c-white;
+  border-radius: 4px;
+  color: v.$c-primary;
+  font-weight: v.$xl-bold;
 }

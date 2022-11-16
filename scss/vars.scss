@@ -1,7 +1,7 @@
 /* ----- FONT-FAMILY ----- */
 
-$font-primary:'Titillium';
-$font-secundary: 'Inter';
+$font-primary: "Titillium Web";
+$font-secundary: "Inter";
 
 /* ----- SIZE----- */
 
@@ -18,13 +18,19 @@ $f-extra-big: 28px;
 
 /* ----- WEIGHT ----- */
 
-$ligth:200;
-$regular:300;
-$normal:400;
-$medium:500;
-$bold:600;
-$xl-bold:700;
+$ligth: 200;
+$regular: 300;
+$normal: 400;
+$medium: 500;
+$bold: 600;
+$xl-bold: 700;
 
 /* ----- COLORS----- */
 
 $c-primary: #122024;
+$c-secondary: #00eea4;
+$c-blue: #0050ff;
+$c-white: #ffffff;
+$c-grey-EB: #ebebeb;
+$c-grey-dark-58: #585858;
+$c-blue-sky-E6: #e6efff;
