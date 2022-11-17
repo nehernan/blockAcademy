@@ -83,7 +83,7 @@ button {
 }
 
 .tooltip {
-  transform: translate3d(805px, 255px, 0px) !important;
+  transform: translate3d(805px, 325px, 0px) !important;
   .tooltip-inner {
     @include fontStyle(v.$f-xregular, v.$normal, v.$c-primary);
     max-width: 238px;
