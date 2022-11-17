@@ -74,35 +74,37 @@ body {
     }
 }
 
-header {
-    height: 960px;
-    background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
-    .menssage {
-        height: 52px;
-        background-color: v.$c-primary;
-        p,
-        a {
+.header {
+    &-home {
+        height: 960px;
+        background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
+        .menssage {
+            height: 52px;
+            background-color: v.$c-primary;
+            p,
+            a {
+                color: v.$c-white;
+                font-size: v.$f-medium;
+                font-family: v.$font-secundary;
+                text-decoration: none;
+            }
+        }
+        .welcome {
+            height: 100vh;
+            align-items: center;
+            display: flex;
             color: v.$c-white;
-            font-size: v.$f-medium;
-            font-family: v.$font-secundary;
-            text-decoration: none;
-        }
-    }
-    .welcome {
-        height: 100vh;
-        align-items: center;
-        display: flex;
-        color: v.$c-white;
-        margin-top: -80px;
-        &-title {
-            font-size: 4.4rem;
-        }
-        &-text {
-            @include fontStyle(v.$f-title, v.$bold, v.$c-white);
-            line-height: 30px;
-            &_sub {
-                @include fontStyle(v.$f-medium, v.$xl-bold, v.$c-white);
-                line-height: 18px;
+            margin-top: -80px;
+            &-title {
+                font-size: 4.4rem;
+            }
+            &-text {
+                @include fontStyle(v.$f-title, v.$bold, v.$c-white);
+                line-height: 30px;
+                &_sub {
+                    @include fontStyle(v.$f-medium, v.$xl-bold, v.$c-white);
+                    line-height: 18px;
+                }
             }
         }
     }
@@ -251,7 +253,7 @@ section {
 }
 
 .certifiedTrainee {
-    margin-top: 200px;
+    margin: 100px 0;
     &-info {
         background-color: v.$c-primary;
         border-radius: 24px;
@@ -260,7 +262,7 @@ section {
         display: flex;
         align-items: center;
         .img-container {
-            height: 150px;
+            height: 120px;
             width: auto;
             display: flex;
             align-items: center;
@@ -269,5 +271,157 @@ section {
                 object-fit: contain;
             }
         }
+    }
+}
+
+.section-courses {
+    background: v.$c-blue-sky-E6;
+    h2 {
+        font-family: v.$font-primary;
+        font-style: normal;
+        font-weight: v.$xl-bold;
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 0.02em;
+        color: v.$c-primary;
+    }
+    p {
+        @include fontStyle(v.$f-medium,
+        v.$normal,
+        v.$c-primary);
+        font-family: v.$font-secundary;
+        font-style: normal;
+        line-height: 22px;
+        span {
+            font-weight: v.$bold;
+        }
+    }
+    .card-course {
+        background: v.$c-primary;
+        color: v.$c-white;
+        border-radius: 20px;
+        max-width: 409px;
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 0 10px;
+            background: v.$c-white;
+            border-radius: 4px;
+            color: v.$c-primary;
+            font-weight: v.$xl-bold;
+        }
+        .text-green {
+            font-family: v.$font-primary;
+            @include fontStyle(v.$f-medium,
+            v.$bold,
+            v.$c-secondary);
+        }
+        .title-description {
+            font-family: v.$font-secundary;
+            @include fontStyle(v.$f-medium,
+            v.$normal,
+            v.$c-white);
+        }
+        .description {
+            font-family: v.$font-secundary;
+            @include fontStyle(v.$f-xmedium,
+            v.$normal,
+            v.$c-white);
+        }
+    }
+}
+
+button {
+    &.ba-primary {
+        @include fontStyle(v.$f-title,
+        v.$xl-bold,
+        v.$c-white);
+        background: v.$c-blue-00;
+        border-radius: 8px;
+        &.btn-md {
+            @include fontStyle(v.$f-medium,
+            v.$bold,
+            v.$c-white);
+            height: 39px;
+        }
+        &.btn-md:hover {
+            @include fontStyle(v.$f-medium,
+            v.$bold,
+            v.$c-white);
+            height: 39px;
+            background: #0039b4;
+        }
+        &.bg-white {
+            color: v.$c-primary;
+        }
+        &.bg-white:hover {
+            color: v.$c-primary;
+            background: #ffffffa3 !important;
+        }
+    }
+    &.ba-primary:hover {
+        @include fontStyle(v.$f-title,
+        v.$xl-bold,
+        v.$c-white);
+        background: #0039b4;
+    }
+    &.ba-secondary {
+        @include fontStyle(v.$f-title,
+        v.$xl-bold,
+        v.$c-white);
+        background: v.$c-grey-dark-58;
+        border-radius: 8px;
+    }
+    .tool-tip:before {
+        content: "";
+        width: 148.55px;
+        height: 39px;
+        background: transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 8px;
+    }
+}
+
+.footer {
+    background: linear-gradient(180deg, #FF0000 0%, #005AFA 100%);
+    margin-top: 5rem;
+    .copy {
+        font-family: v.$font-secundary;
+        @include fontStyle(v.$f-xmedium,
+        v.$normal,
+        v.$c-white);
+        font-style: normal;
+    }
+    .menu {
+        list-style: none;
+        .menu-item {
+            a {
+                font-family: v.$font-secundary;
+                @include fontStyle(v.$f-medium,
+                v.$normal,
+                v.$c-white);
+                line-height: 28px;
+                &:hover {
+                    text-decoration: none;
+                    opacity: 0.6;
+                }
+            }
+            &.active {
+                a {
+                    color: v.$c-secondary;
+                }
+            }
+        }
+    }
+    .circle-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        background: v.$c-white;
+        border-radius: 50%;
     }
 }

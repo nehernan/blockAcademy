@@ -74,38 +74,38 @@ body {
   color: #ffffff !important;
 }
 
-header {
+.header-home {
   height: 960px;
   background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
 }
-header .menssage {
+.header-home .menssage {
   height: 52px;
   background-color: #122024;
 }
-header .menssage p,
-header .menssage a {
+.header-home .menssage p,
+.header-home .menssage a {
   color: #ffffff;
   font-size: 16px;
   font-family: "Inter";
   text-decoration: none;
 }
-header .welcome {
+.header-home .welcome {
   height: 100vh;
   align-items: center;
   display: flex;
   color: #ffffff;
   margin-top: -80px;
 }
-header .welcome-title {
+.header-home .welcome-title {
   font-size: 4.4rem;
 }
-header .welcome-text {
+.header-home .welcome-text {
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
   line-height: 30px;
 }
-header .welcome-text_sub {
+.header-home .welcome-text_sub {
   font-size: 16px;
   font-weight: 700;
   color: #ffffff;
@@ -247,7 +247,7 @@ section.trainingCamps {
 }
 
 .certifiedTrainee {
-  margin-top: 200px;
+  margin: 100px 0;
 }
 .certifiedTrainee-info {
   background-color: #122024;
@@ -258,7 +258,7 @@ section.trainingCamps {
   align-items: center;
 }
 .certifiedTrainee-image .img-container {
-  height: 150px;
+  height: 120px;
   width: auto;
   display: flex;
   align-items: center;
@@ -266,6 +266,152 @@ section.trainingCamps {
 }
 .certifiedTrainee-image .img-container img {
   object-fit: contain;
+}
+
+.section-courses {
+  background: #e6efff;
+}
+.section-courses h2 {
+  font-family: "Titillium Web";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  color: #122024;
+}
+.section-courses p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #122024;
+  font-family: "Inter";
+  font-style: normal;
+  line-height: 22px;
+}
+.section-courses p span {
+  font-weight: 600;
+}
+.section-courses .card-course {
+  background: #122024;
+  color: #ffffff;
+  border-radius: 20px;
+  max-width: 409px;
+}
+.section-courses .card-course .pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  background: #ffffff;
+  border-radius: 4px;
+  color: #122024;
+  font-weight: 700;
+}
+.section-courses .card-course .text-green {
+  font-family: "Titillium Web";
+  font-size: 16px;
+  font-weight: 600;
+  color: #00eea4;
+}
+.section-courses .card-course .title-description {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.section-courses .card-course .description {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+button.ba-primary {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #0050ff;
+  border-radius: 8px;
+}
+button.ba-primary.btn-md {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  height: 39px;
+}
+button.ba-primary.btn-md:hover {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  height: 39px;
+  background: #0039b4;
+}
+button.ba-primary.bg-white {
+  color: #122024;
+}
+button.ba-primary.bg-white:hover {
+  color: #122024;
+  background: rgba(255, 255, 255, 0.6392156863) !important;
+}
+button.ba-primary:hover {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #0039b4;
+}
+button.ba-secondary {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #585858;
+  border-radius: 8px;
+}
+button .tool-tip:before {
+  content: "";
+  width: 148.55px;
+  height: 39px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 8px;
+}
+
+.footer {
+  background: linear-gradient(180deg, #FF0000 0%, #005AFA 100%);
+  margin-top: 5rem;
+}
+.footer .copy {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  font-style: normal;
+}
+.footer .menu {
+  list-style: none;
+}
+.footer .menu .menu-item a {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 28px;
+}
+.footer .menu .menu-item a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+.footer .menu .menu-item.active a {
+  color: #00eea4;
+}
+.footer .circle-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  background: #ffffff;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=styleHome.css.map */
