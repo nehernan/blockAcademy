@@ -8,6 +8,7 @@
 
 body {
     font-family: v.$font-primary;
+    background-color: v.$c-gray-EB;
 }
 
 .title {
@@ -46,14 +47,20 @@ body {
     line-height: 22px;
 }
 
-.btn-generic {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 165px;
-    height: 56px;
-    font-size: v.$f-subtitle;
-    border-radius: 8px;
+.btn {
+    &-generic {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 165px;
+        height: 56px;
+        font-size: v.$f-subtitle;
+        border-radius: 8px;
+    }
+    &-red {
+        background-color: v.$c-red;
+        color: v.$c-white;
+    }
 }
 
 .navbar {
@@ -68,7 +75,7 @@ body {
 }
 
 header {
-    height: 980px;
+    height: 960px;
     background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
     .menssage {
         height: 52px;
@@ -102,10 +109,13 @@ header {
 }
 
 .promo {
-    background: v.$c-white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 24px;
-    overflow: hidden;
+    position: absolute;
+    .container {
+        background-color: v.$c-white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 24px;
+        overflow: hidden;
+    }
     &-cash {
         background: linear-gradient(180deg, #00EEA4 18.83%, #005BFC 100%);
         color: v.$c-white;
@@ -141,8 +151,11 @@ header {
 }
 
 section {
+    margin-bottom: 5rem;
     &.trainingCamps {
-        padding-top: 250px;
+        padding: 300px 0 5rem;
+        background-color: v.$c-white;
+        border-radius: 20px;
     }
 }
 
@@ -176,5 +189,85 @@ section {
     .icon {
         width: 40px;
         height: 40px;
+    }
+}
+
+.list {
+    li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    .icon-list {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url("/assets/img/icon-list.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        margin-right: .3rem;
+    }
+}
+
+.blockAcademy-info {
+    &_image {
+        position: relative;
+        align-items: flex-end;
+        .img-container {
+            width: 406px;
+            height: 595px;
+            img {
+                object-fit: contain;
+            }
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 90%;
+            width: 300px;
+            border-radius: 150px 150px 0 0;
+            background: linear-gradient(180deg, #D9D9D9 0%, #0050FF 100%);
+            z-index: -1;
+        }
+    }
+    &_card {
+        position: relative;
+        border-left: 2px solid v.$c-blue;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: v.$c-blue;
+            left: -16px;
+        }
+        &.border-hidden {
+            border-color: transparent;
+        }
+    }
+}
+
+.certifiedTrainee {
+    margin-top: 200px;
+    &-info {
+        background-color: v.$c-primary;
+        border-radius: 24px;
+    }
+    &-image {
+        display: flex;
+        align-items: center;
+        .img-container {
+            height: 150px;
+            width: auto;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            img {
+                object-fit: contain;
+            }
+        }
     }
 }
