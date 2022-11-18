@@ -28,7 +28,7 @@ body {
 }
 
 .text-blue {
-  color: #9747ff;
+  color: #0050ff;
 }
 .text-gray {
   color: #888888;
@@ -60,6 +60,7 @@ body {
   height: 56px;
   font-size: 20px;
   border-radius: 8px;
+  background: #0050ff;
 }
 .btn-red {
   background-color: #ff0000;
@@ -231,7 +232,7 @@ section.trainingCamps {
 }
 .blockAcademy-info_card {
   position: relative;
-  border-left: 2px solid #9747ff;
+  border-left: 2px solid #0050ff;
 }
 .blockAcademy-info_card::before {
   content: "";
@@ -239,7 +240,7 @@ section.trainingCamps {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #9747ff;
+  background-color: #0050ff;
   left: -16px;
 }
 .blockAcademy-info_card.border-hidden {
@@ -338,47 +339,47 @@ section.trainingCamps {
   height: 47px;
 }
 
-button.ba-primary {
+.btn.ba-primary {
   font-size: 22px;
   font-weight: 700;
   color: #ffffff;
   background: #0050ff;
   border-radius: 8px;
 }
-button.ba-primary.btn-md {
+.btn.ba-primary.btn-md {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   height: 39px;
 }
-button.ba-primary.btn-md:hover {
+.btn.ba-primary.btn-md:hover {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   height: 39px;
   background: #0039b4;
 }
-button.ba-primary.bg-white {
+.btn.ba-primary.bg-white {
   color: #122024;
 }
-button.ba-primary.bg-white:hover {
+.btn.ba-primary.bg-white:hover {
   color: #122024;
   background: rgba(255, 255, 255, 0.6392156863) !important;
 }
-button.ba-primary:hover {
+.btn.ba-primary:hover {
   font-size: 22px;
   font-weight: 700;
   color: #ffffff;
   background: #0039b4;
 }
-button.ba-secondary {
+.btn.ba-secondary {
   font-size: 22px;
   font-weight: 700;
   color: #ffffff;
   background: #585858;
   border-radius: 8px;
 }
-button .tool-tip:before {
+.btn .tool-tip:before {
   content: "";
   width: 148.55px;
   height: 39px;

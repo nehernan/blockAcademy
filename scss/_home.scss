@@ -22,7 +22,7 @@ body {
 
 .text {
     &-blue {
-        color: v.$c-blue;
+        color: v.$c-blue-00;
     }
     &-gray {
         color: v.$c-gray;
@@ -56,6 +56,7 @@ body {
         height: 56px;
         font-size: v.$f-subtitle;
         border-radius: 8px;
+        background: v.$c-blue-00;
     }
     &-red {
         background-color: v.$c-red;
@@ -236,14 +237,14 @@ section {
     }
     &_card {
         position: relative;
-        border-left: 2px solid v.$c-blue;
+        border-left: 2px solid v.$c-blue-00;
         &::before {
             content: '';
             position: absolute;
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background-color: v.$c-blue;
+            background-color: v.$c-blue-00;
             left: -16px;
         }
         &.border-hidden {
@@ -344,7 +345,7 @@ section {
     }
 }
 
-button {
+.btn {
     &.ba-primary {
         @include fontStyle(v.$f-title,
         v.$xl-bold,
