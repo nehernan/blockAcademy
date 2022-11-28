@@ -107,8 +107,14 @@ button {
   background: v.$c-gray-EB;
 }
 
-.section-hero {
+.section-hero,
+.section-hero-detail {
   background: v.$c-primary;
+  height: 473px;
+  background-image: url("../../assets/images/degree-training-camp.svg"),
+    url("../../assets/images/hero-training-camp.jpg");
+  background-repeat: no-repeat;
+  background-position-x: right;
 
   h2 {
     font-family: v.$font-primary;
@@ -141,6 +147,10 @@ button {
       @include fontStyle(v.$f-big, v.$medium, v.$c-primary);
     }
   }
+}
+
+.section-hero-detail {
+  background-image: none;
 }
 
 .section-courses {
@@ -297,6 +307,25 @@ button {
       font-size: v.$f-medium;
       font-weight: v.$xl-bold;
     }
+    &.scroll {
+      overflow-y: scroll;
+      overflow-y: overlay;
+      max-height: 283.59px;
+      &::-webkit-scrollbar {
+        width: 4px; /* Tamaño del scroll en vertical */
+      }
+      &::-webkit-scrollbar-thumb {
+        background: v.$c-secondary;
+        border-radius: 4px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: v.$c-secondary;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+      }
+      &::-webkit-scrollbar-thumb:active {
+        background: v.$c-secondary;
+      }
+    }
   }
 
   h3 {
@@ -382,4 +411,13 @@ button {
   border-radius: 4px;
   color: v.$c-primary;
   font-weight: v.$xl-bold;
+}
+
+@media screen and (max-width: 767px) {
+  .section-hero-detail {
+    height: auto;
+    .card-course {
+      position: relative;
+    }
+  }
 }

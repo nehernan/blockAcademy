@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Titillium+Web:wght@200;300;400;600;700&display=swap");
 /* ----- FONT-FAMILY ----- */
 /* ----- SIZE----- */
@@ -120,10 +121,16 @@ button.btn-test img {
   background: #ebebeb;
 }
 
-.section-hero {
+.section-hero,
+.section-hero-detail {
   background: #122024;
+  height: 473px;
+  background-image: url("../../assets/images/degree-training-camp.svg"), url("../../assets/images/hero-training-camp.jpg");
+  background-repeat: no-repeat;
+  background-position-x: right;
 }
-.section-hero h2 {
+.section-hero h2,
+.section-hero-detail h2 {
   font-family: "Titillium Web";
   font-style: normal;
   font-weight: 700;
@@ -132,31 +139,39 @@ button.btn-test img {
   letter-spacing: 0.02em;
   color: #ebebeb;
 }
-.section-hero h4 {
+.section-hero h4,
+.section-hero-detail h4 {
   font-family: "Titillium Web";
   font-size: 22px;
   font-weight: 600;
   color: #ebebeb;
   line-height: 30px;
 }
-.section-hero .card-course {
+.section-hero .card-course,
+.section-hero-detail .card-course {
   position: absolute;
   background: #ffffff;
   box-shadow: 5px 5px 10px rgba(12, 26, 75, 0.24);
   border-radius: 20px;
   padding: 8px;
 }
-.section-hero .card-course h3 {
+.section-hero .card-course h3,
+.section-hero-detail .card-course h3 {
   font-family: "Inter";
   font-size: 22px;
   font-weight: 600;
   color: #122024;
 }
-.section-hero .card-course p {
+.section-hero .card-course p,
+.section-hero-detail .card-course p {
   font-family: "Inter";
   font-size: 18px;
   font-weight: 500;
   color: #122024;
+}
+
+.section-hero-detail {
+  background-image: none;
 }
 
 .section-courses {
@@ -313,6 +328,25 @@ button.btn-test img {
   font-size: 16px;
   font-weight: 700;
 }
+.section-profile .profile-info-box.scroll {
+  overflow-y: scroll;
+  overflow-y: overlay;
+  max-height: 283.59px;
+}
+.section-profile .profile-info-box.scroll::-webkit-scrollbar {
+  width: 4px; /* Tamaño del scroll en vertical */
+}
+.section-profile .profile-info-box.scroll::-webkit-scrollbar-thumb {
+  background: #00eea4;
+  border-radius: 4px;
+}
+.section-profile .profile-info-box.scroll::-webkit-scrollbar-thumb:hover {
+  background: #00eea4;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.section-profile .profile-info-box.scroll::-webkit-scrollbar-thumb:active {
+  background: #00eea4;
+}
 .section-profile h3 {
   font-family: "Titillium Web";
   font-size: 28px;
@@ -393,6 +427,15 @@ button.btn-test img {
   border-radius: 4px;
   color: #122024;
   font-weight: 700;
+}
+
+@media screen and (max-width: 767px) {
+  .section-hero-detail {
+    height: auto;
+  }
+  .section-hero-detail .card-course {
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=styleTrainingCamps.css.map */
