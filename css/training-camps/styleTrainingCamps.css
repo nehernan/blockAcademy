@@ -21,47 +21,47 @@ header.header {
   background: #122024;
 }
 
-button.ba-primary {
+.btn.ba-primary {
   font-size: 22px;
   font-weight: 700;
   color: #ffffff;
   background: #0050ff;
   border-radius: 8px;
 }
-button.ba-primary.btn-md {
+.btn.ba-primary.btn-md {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   height: 39px;
 }
-button.ba-primary.btn-md:hover {
+.btn.ba-primary.btn-md:hover {
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
   height: 39px;
   background: #0039b4;
 }
-button.ba-primary.bg-white {
+.btn.ba-primary.bg-white {
   color: #122024;
 }
-button.ba-primary.bg-white:hover {
+.btn.ba-primary.bg-white:hover {
   color: #122024;
   background: rgba(255, 255, 255, 0.6392156863) !important;
 }
-button.ba-primary:hover {
+.btn.ba-primary:hover {
   font-size: 22px;
   font-weight: 700;
   color: #ffffff;
   background: #0039b4;
 }
-button.ba-secondary {
+.btn.ba-secondary {
   font-size: 22px;
   font-weight: 700;
   color: #ffffff;
   background: #585858;
   border-radius: 8px;
 }
-button .tool-tip:before {
+.btn .tool-tip:before {
   content: "";
   width: 148.55px;
   height: 39px;
@@ -71,7 +71,7 @@ button .tool-tip:before {
   top: 0;
   border-radius: 8px;
 }
-button.btn-test {
+.btn.btn-test {
   font-size: 16px;
   font-weight: 700;
   color: #122024;
@@ -82,7 +82,7 @@ button.btn-test {
   padding: 25px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
-button.btn-test img {
+.btn.btn-test img {
   transform: rotate(270deg);
 }
 

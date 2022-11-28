@@ -1,11 +1,11 @@
 @use "vars" as v;
 @import "mixins";
-
 .navbar .navbar-brand img {
   width: 183px;
   height: auto;
   margin-bottom: 5px;
 }
+
 .navbar .nav-link {
   color: #ffffff !important;
 }
@@ -19,7 +19,7 @@ header {
   }
 }
 
-button {
+.btn {
   &.ba-primary {
     @include fontStyle(v.$f-title, v.$xl-bold, v.$c-white);
     background: v.$c-blue-00;
@@ -47,7 +47,7 @@ button {
   }
   &.ba-secondary {
     @include fontStyle(v.$f-title, v.$xl-bold, v.$c-white);
-    background: v.$c-gray-dark-58;
+    background: v.$c-grey-dark-58;
     border-radius: 8px;
   }
   .tool-tip:before {
@@ -60,7 +60,6 @@ button {
     top: 0;
     border-radius: 8px;
   }
-
   &.btn-test {
     @include fontStyle(v.$f-medium, v.$xl-bold, v.$c-primary);
     text-align: left;
@@ -78,6 +77,7 @@ button {
 .btn:disabled {
   background: #999999;
 }
+
 .btn:disabled:hover {
   background: #999999 !important;
 }
@@ -142,170 +142,178 @@ button {
       font-family: v.$font-secundary;
       @include fontStyle(v.$f-title, v.$bold, v.$c-primary);
     }
+    h4 {
+      font-family: v.$font-primary;
+      @include fontStyle(v.$f-title, v.$bold, v.$c-gray-EB);
+      line-height: 30px;
+    }
+    .card-course {
+      position: absolute;
+      background: v.$c-white;
+      box-shadow: 5px 5px 10px rgba(12, 26, 75, 0.24);
+      border-radius: 20px;
+      padding: 8px;
+      h3 {
+        font-family: v.$font-secundary;
+        @include fontStyle(v.$f-title, v.$bold, v.$c-primary);
+      }
+      p {
+        font-family: v.$font-secundary;
+        @include fontStyle(v.$f-big, v.$medium, v.$c-primary);
+      }
+    }
+  }
+
+  .section-hero-detail {
+    background-image: none;
+  }
+
+  .section-courses {
+    background: v.$c-blue-sky-E6;
+    h2 {
+      font-family: v.$font-primary;
+      font-style: normal;
+      font-weight: v.$xl-bold;
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: 0.02em;
+      color: v.$c-primary;
+    }
     p {
+      @include fontStyle(v.$f-medium, v.$normal, v.$c-primary);
       font-family: v.$font-secundary;
-      @include fontStyle(v.$f-big, v.$medium, v.$c-primary);
+      font-style: normal;
+      line-height: 22px;
+      span {
+        font-weight: v.$bold;
+      }
+    }
+    .card-course {
+      background: v.$c-primary;
+      color: v.$c-white;
+      border-radius: 20px;
+      max-width: 409px;
+      h3 {
+        font-family: v.$font-primary;
+        @include fontStyle(v.$f-extra-big, v.$xl-bold, v.$c-white);
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        padding: 0 10px;
+        background: v.$c-white;
+        border-radius: 4px;
+        color: v.$c-primary;
+        font-weight: v.$xl-bold;
+      }
+      .text-green {
+        font-family: v.$font-primary;
+        @include fontStyle(v.$f-medium, v.$bold, v.$c-secondary);
+      }
+      .title-description {
+        font-family: v.$font-secundary;
+        @include fontStyle(v.$f-medium, v.$normal, v.$c-white);
+      }
+      .description {
+        font-family: v.$font-secundary;
+        @include fontStyle(v.$f-xmedium, v.$normal, v.$c-white);
+      }
+      .sprint-box {
+        @include fontStyle(v.$f-medium, v.$xl-bold, v.$c-white);
+        background: v.$c-grey-dark-58;
+        border-radius: 8px;
+        padding: 0.375rem 0.75rem;
+        line-height: 1.5;
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        height: 47px;
+      }
     }
   }
-}
 
-.section-hero-detail {
-  background-image: none;
-}
-
-.section-courses {
-  background: v.$c-blue-sky-E6;
-
-  h2 {
-    font-family: v.$font-primary;
-    font-style: normal;
-    font-weight: v.$xl-bold;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.02em;
-    color: v.$c-primary;
-  }
-
-  p {
-    @include fontStyle(v.$f-medium, v.$normal, v.$c-primary);
-    font-family: v.$font-secundary;
-    font-style: normal;
-    line-height: 22px;
-    span {
-      font-weight: v.$bold;
+  .section-admision {
+    h2 {
+      font-family: v.$font-primary;
+      font-style: normal;
+      font-weight: v.$xl-bold;
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: 0.02em;
+      color: v.$c-primary;
     }
-  }
-
-  .card-course {
-    background: v.$c-primary;
-    color: v.$c-white;
-    border-radius: 20px;
-    max-width: 409px;
-
     h3 {
       font-family: v.$font-primary;
-      @include fontStyle(v.$f-extra-big, v.$xl-bold, v.$c-white);
-    }
-
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 0 10px;
-      background: v.$c-white;
-      border-radius: 4px;
-      color: v.$c-primary;
       font-weight: v.$xl-bold;
+      font-size: 28px;
+      letter-spacing: 0.02em;
     }
-
-    .text-green {
+    p {
       font-family: v.$font-primary;
-      @include fontStyle(v.$f-medium, v.$bold, v.$c-secondary);
-    }
-
-    .title-description {
-      font-family: v.$font-secundary;
-      @include fontStyle(v.$f-medium, v.$normal, v.$c-white);
-    }
-
-    .description {
-      font-family: v.$font-secundary;
-      @include fontStyle(v.$f-xmedium, v.$normal, v.$c-white);
-    }
-
-    .sprint-box {
-      @include fontStyle(v.$f-medium, v.$xl-bold, v.$c-white);
-      background: v.$c-gray-dark-58;
-      border-radius: 8px;
-      padding: 0.375rem 0.75rem;
-      line-height: 1.5;
-      display: inline-flex;
-      align-items: center;
-      width: 100%;
-      height: 47px;
+      font-weight: v.$bold;
+      font-size: v.$f-title;
+      line-height: 30px;
     }
   }
-}
 
-.section-admision {
-  h2 {
-    font-family: v.$font-primary;
-    font-style: normal;
-    font-weight: v.$xl-bold;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.02em;
-    color: v.$c-primary;
-  }
-
-  h3 {
-    font-family: v.$font-primary;
-    font-weight: v.$xl-bold;
-    font-size: 28px;
-    letter-spacing: 0.02em;
-  }
-
-  p {
-    font-family: v.$font-primary;
-    font-weight: v.$bold;
-    font-size: v.$f-title;
-    line-height: 30px;
-  }
-}
-
-.section-accordion {
-  background: v.$c-gray-EB;
-
-  .accordion {
-    .card {
-      border-radius: 10px;
-      box-shadow: 5px 5px 10px rgba(12, 26, 75, 0.24);
-      .card-header {
-        height: 69.55px;
-        border-bottom: none;
-        background: v.$c-white;
-        button {
-          box-shadow: none;
-          text-decoration: none;
-          @include fontStyle(v.$f-big, v.$medium, v.$c-primary);
-          img {
-            transform: rotate(180deg);
-            transition: all 0.3s ease;
-          }
-          &.collapsed {
+  .section-accordion {
+    background: v.$c-gray-EB;
+    .accordion {
+      .card {
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(12, 26, 75, 0.24);
+        .card-header {
+          height: 69.55px;
+          border-bottom: none;
+          background: v.$c-white;
+          button {
+            box-shadow: none;
+            text-decoration: none;
+            @include fontStyle(v.$f-big, v.$medium, v.$c-primary);
             img {
-              transform: rotate(360deg);
+              transform: rotate(180deg);
+              transition: all 0.3s ease;
+            }
+            &.collapsed {
+              img {
+                transform: rotate(360deg);
+              }
             }
           }
         }
       }
     }
   }
-}
 
-.section-profile {
-  font-family: v.$font-primary;
-  .title {
-    @include fontStyle(v.$f-title, v.$bold, v.$c-primary);
-  }
-  .profile-box {
-    background: v.$c-primary;
-    border-radius: 20px;
-    padding: 35px 25px;
-    .user {
-      width: 144px;
-      height: 144px;
-      border-radius: 999px;
-      box-shadow: 0 0 0px 3px v.$c-white;
+  .section-profile {
+    font-family: v.$font-primary;
+    .title {
+      @include fontStyle(v.$f-title, v.$bold, v.$c-primary);
     }
-  }
-  .profile-info-box {
-    background: v.$c-primary;
-    border-radius: 20px;
-    padding: 25px;
-    color: v.$c-white;
-    div {
-      font-size: v.$f-medium;
-      font-weight: v.$xl-bold;
+    .profile-box {
+      background: v.$c-primary;
+      border-radius: 20px;
+      padding: 35px 25px;
+      .user {
+        width: 144px;
+        height: 144px;
+        border-radius: 999px;
+        box-shadow: 0 0 0px 3px v.$c-white;
+      }
+    }
+    .profile-info-box {
+      background: v.$c-primary;
+      border-radius: 20px;
+      padding: 25px;
+      color: v.$c-white;
+      div {
+        font-size: v.$f-medium;
+        font-weight: v.$xl-bold;
+      }
+    }
+    h3 {
+      font-family: v.$font-primary;
+      @include fontStyle(v.$f-extra-big, v.$xl-bold, v.$c-white);
     }
     &.scroll {
       overflow-y: scroll;
@@ -336,13 +344,11 @@ button {
 
 .footer {
   background: v.$c-primary;
-
   .copy {
     font-family: v.$font-secundary;
     @include fontStyle(v.$f-xmedium, v.$normal, v.$c-white);
     font-style: normal;
   }
-
   .menu {
     list-style: none;
     .menu-item {
@@ -362,7 +368,6 @@ button {
       }
     }
   }
-
   .circle-link {
     display: flex;
     justify-content: center;
@@ -371,7 +376,6 @@ button {
     height: 34px;
     background: v.$c-white;
     border-radius: 50%;
-
     &:hover {
       opacity: 0.5;
     }
