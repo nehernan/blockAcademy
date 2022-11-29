@@ -19,6 +19,21 @@ body {
   font-weight: 700;
   color: #122024;
 }
+.title-line {
+  position: relative;
+  display: block;
+  max-width: fit-content;
+}
+.title-line::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #005AFA 0%, #FF0000 100%);
+  bottom: -4px;
+  left: 0;
+}
 
 .subtitle {
   font-size: 22px;
@@ -67,6 +82,15 @@ body {
   color: #ffffff;
 }
 
+.navbar {
+  z-index: 100;
+  height: 80px;
+}
+.navbar.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #122024;
+}
 .navbar .navbar-brand img {
   height: 2.2rem;
   width: auto;
@@ -75,20 +99,23 @@ body {
   color: #ffffff !important;
 }
 
-.header-home {
-  height: 960px;
-  background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
-}
-.header-home .menssage {
-  height: 52px;
+.menssage {
+  z-index: 100;
+  min-height: 52px;
   background-color: #122024;
+  padding: 2rem 0;
 }
-.header-home .menssage p,
-.header-home .menssage a {
+.menssage p,
+.menssage a {
   color: #ffffff;
   font-size: 16px;
   font-family: "Inter";
   text-decoration: none;
+}
+
+.header-home {
+  height: 960px;
+  background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
 }
 .header-home .welcome {
   height: 100vh;
@@ -159,25 +186,16 @@ section {
   margin-bottom: 5rem;
 }
 section.trainingCamps {
+  margin-bottom: 0;
   padding: 300px 0 5rem;
-  background-color: #ffffff;
+  background-color: #efd1eb;
   border-radius: 20px;
 }
+section.team {
+  background-color: #ffffff;
+  padding: 5rem 0;
+}
 
-.trainingCamps-info .title {
-  position: relative;
-  display: block;
-}
-.trainingCamps-info .title::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 265px;
-  height: 3px;
-  background: linear-gradient(90deg, #005AFA 0%, #FF0000 100%);
-  bottom: -4px;
-  left: 0;
-}
 .trainingCamps-container_img {
   border-radius: 24px;
   overflow: hidden;
@@ -259,13 +277,10 @@ section.trainingCamps {
   align-items: center;
 }
 .certifiedTrainee-image .img-container {
-  height: 120px;
   width: auto;
-  display: flex;
-  align-items: center;
-  justify-items: center;
 }
 .certifiedTrainee-image .img-container img {
+  width: 100%;
   object-fit: contain;
 }
 
@@ -390,6 +405,24 @@ section.trainingCamps {
   border-radius: 8px;
 }
 
+section.team .card-team {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.team .card-team .img-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 24px;
+}
+section.team .card-team .img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .footer {
   background: linear-gradient(180deg, #FF0000 0%, #005AFA 100%);
   margin-top: 5rem;
@@ -426,6 +459,80 @@ section.trainingCamps {
   height: 34px;
   background: #ffffff;
   border-radius: 50%;
+}
+
+.bgColor {
+  background-color: #122024;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    border: none;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .navbar-nav {
+    background-color: #122024;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .collapse,
+  .navbar-nav {
+    padding: 0.75rem 0;
+    border-radius: 24px;
+  }
+  .menssage p,
+  .menssage a {
+    font-size: 13px;
+  }
+  .header-home .welcome-title {
+    font-size: 3.2rem;
+  }
+  .header-home .welcome-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 30px;
+  }
+  .header-home .welcome-text_sub {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 18px;
+  }
+  .promo {
+    bottom: -570px;
+  }
+  .promo-cash_circle {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 20px;
+  }
+  .promo-cash_circle::before {
+    width: 35px;
+    height: 35px;
+  }
+  .promo-cash h2 {
+    font-size: 50px;
+  }
+  .promo-cash p {
+    font-size: 50px;
+  }
+  section.trainingCamps {
+    padding: 600px 0 5rem;
+  }
+  .certifiedTrainee-image {
+    position: relative;
+  }
+  .certifiedTrainee-image .img-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: -40px;
+    bottom: -150px;
+  }
 }
 
 /*# sourceMappingURL=styleHome.css.map */
