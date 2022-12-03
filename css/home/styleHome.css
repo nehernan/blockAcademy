@@ -86,10 +86,17 @@ body {
   z-index: 100;
   height: 80px;
 }
-.navbar.sticky {
-  position: sticky;
+.navbar.bgcTransparent {
+  position: absolute;
+  width: 100%;
+  top: 1px;
+  background-color: transparent !important;
+}
+.navbar.fixed {
+  position: fixed;
+  width: 100%;
   top: 0;
-  background-color: #122024;
+  background-color: #122024 !important;
 }
 .navbar .navbar-brand img {
   height: 2.2rem;
@@ -97,6 +104,17 @@ body {
 }
 .navbar .nav-link {
   color: #ffffff !important;
+}
+.navbar .btnBusiness {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  background-color: #ffffff !important;
+  color: #0050ff !important;
+  max-width: 120px;
 }
 
 .menssage {
@@ -115,6 +133,7 @@ body {
 
 .header-home {
   height: 960px;
+  padding-top: 80px;
   background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
 }
 .header-home .welcome {
