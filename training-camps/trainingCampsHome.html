@@ -17,9 +17,9 @@
 
 <body>
 
-  <header class="header">
-    <div class="container-fluid p-0">
-      <nav class="navbar navbar-expand-lg navbar-light">
+  <!-- <header class="header"> -->
+  <!--<div class="container-fluid p-0"> -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="../assets/img/logo-blockAcademy.png" alt="BlockAcademy"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -39,9 +39,31 @@
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> -->
+
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="../assets/img/logo-blockAcademy.png" alt="BlockAcademy"></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav menu w-100 d-flex justify-content-between align-items-lg-center">
+          <li class="nav-item menu-item">
+            <a class="nav-link" href="/training-camps/trainingCampsHome.html" target="_blank">Training Camps</a>
+          </li>
+          <li class="nav-item menu-item">
+            <a class="nav-link" href="#">Perfil
+              <img class="ml-2 d-none d-md-inline-block" src="../assets/images/ic-profile.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
+  <!-- </div> -->
+  <!-- </header> -->
 
   <div class="section-hero">
     <div class="container h-100">
@@ -69,7 +91,7 @@
           <img class="align-self-start mt-auto mb-5" src="../assets/images/diamond-color.svg" alt="">
         </div>
         <div class="col-12 col-md-9 d-md-flex">
-          <div class="card-course p-4 mr-md-2 mb-3 mb-md-0">
+          <div class="card-course mx-auto p-4 mr-md-2 mb-3 mb-md-0">
             <h3 class="mb-4">Frontend</h3>
             <div class="pill mb-4">
               Patrocina: Mercado libre
@@ -97,7 +119,7 @@
             <div class="sprint-box my-2">Sprint 2 - Discord</div>
             <button type="button" class="btn ba-primary w-100 my-2">Ver más</button>
           </div>
-          <div class="card-course p-4 ml-md-2">
+          <div class="card-course mx-auto p-4 ml-md-2">
             <h3 class="mb-4">Backend</h3>
             <div class="pill mb-4">
               Patrocina: Mercado libre
@@ -134,51 +156,111 @@
     <div class="container">
       <div class="row py-5">
         <div class="col-12 text-center">
-          <h2 class="mb-5">Etapas de admisión</h2>
+          <h2 class="mb-md-5">Etapas de admisión</h2>
         </div>
         <div class="col-12 mt-2">
-          <div class="d-md-flex justify-content-between position-relative">
-            <div class="bar-degree"></div>
-            <div class="admision-box">
-              <div class="admision-circle mx-auto">
-                <div class="admision-circle-inner">
-                  <h2>1</h2>
+          <div class="row justify-content-between position-relative">
+            <div class="bar-degree-horizontal d-none d-md-block"></div>
+            <div class="bar-degree-vertical d-md-none"></div>
+
+            <div class="col-12 col-md-2">
+              <div class="row">
+                <div class="col-4 px-0 d-md-none">
+                </div>
+                <div class="col-4 col-md px-0 d-flex justify-content-center">
+                  <div class="mision-box my-4 my-md-0">
+                    <div class="admision-circle mx-auto">
+                      <div class="admision-circle-inner">
+                        <h2>1</h2>
+                      </div>
+                    </div>
+                    <h3 class="my-md-4 text-center d-none d-md-block">Datos<br>Personales</h3>
+                  </div>
+                </div>
+                <div class="col-4 px-0 d-flex align-items-center d-md-none">
+                  <h3 class="my-md-4 text-left ">Datos<br>Personales</h3>
                 </div>
               </div>
-              <h3 class="my-4 text-center">Datos <br>personales</h3>
             </div>
-            <div class="admision-box">
-              <div class="admision-circle mx-auto">
-                <div class="admision-circle-inner">
-                  <h2>2</h2>
+
+            <div class="col-12 col-md-2">
+              <div class="row">
+                <div class="col-4 px-0 d-flex align-items-center justify-content-end d-md-none">
+                  <h3 class="my-md-4 text-right d-md-none">Test de<br>Inglés</h3>
+                </div>
+                <div class="col-4 col-md px-0 d-flex justify-content-center">
+                  <div class="mision-box my-4 my-md-0">
+                    <div class="admision-circle mx-auto">
+                      <div class="admision-circle-inner">
+                        <h2>2</h2>
+                      </div>
+                    </div>
+                    <h3 class="my-md-4 text-center d-none d-md-block">Test de<br>Inglés</h3>
+                  </div>
+                </div>
+                <div class="col-4 px-0 d-md-none"></div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-2">
+              <div class="row">
+                <div class="col-4 px-0 d-md-none">
+                </div>
+                <div class="col-4 col-md px-0 d-flex justify-content-center">
+                  <div class="mision-box my-4 my-md-0">
+                    <div class="admision-circle mx-auto">
+                      <div class="admision-circle-inner">
+                        <h2>3</h2>
+                      </div>
+                    </div>
+                    <h3 class="my-md-4 text-center d-none d-md-block">Test de <br>Lógica</h3>
+                  </div>
+                </div>
+                <div class="col-4 px-0 d-flex align-items-center d-md-none">
+                  <h3 class="my-md-4 text-left ">Test de <br>Lógica</h3>
                 </div>
               </div>
-              <h3 class="my-4 text-center">Test de<br>Inglés</h3>
             </div>
-            <div class="admision-box">
-              <div class="admision-circle mx-auto">
-                <div class="admision-circle-inner">
-                  <h2>3</h2>
+
+            <div class="col-12 col-md-2">
+              <div class="row">
+                <div class="col-4 px-0 d-flex align-items-center justify-content-end d-md-none">
+                  <h3 class="my-md-4 text-right d-md-none">Prep-course + <br>Examen Final</h3>
+                </div>
+                <div class="col-4 col-md px-0 d-flex justify-content-center">
+                  <div class="mision-box my-4 my-md-0">
+                    <div class="admision-circle mx-auto">
+                      <div class="admision-circle-inner">
+                        <h2>4</h2>
+                      </div>
+                    </div>
+                    <h3 class="my-md-4 text-center d-none d-md-block">Prep-course + <br>Examen Final</h3>
+                  </div>
+                </div>
+                <div class="col-4 px-0 d-md-none"></div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-2">
+              <div class="row">
+                <div class="col-4 px-0 d-md-none">
+                </div>
+                <div class="col-4 col-md px-0 d-flex justify-content-center">
+                  <div class="mision-box my-4 my-md-0">
+                    <div class="admision-circle mx-auto">
+                      <div class="admision-circle-inner">
+                        <h2>5</h2>
+                      </div>
+                    </div>
+                    <h3 class="my-md-4 text-center d-none d-md-block">Training<br>Camp</h3>
+                  </div>
+                </div>
+                <div class="col-4 px-0 d-flex align-items-center d-md-none">
+                  <h3 class="my-md-4 text-left ">Training<br>Camp</h3>
                 </div>
               </div>
-              <h3 class="my-4 text-center">Test de<br>Lógica</h3>
             </div>
-            <div class="admision-box">
-              <div class="admision-circle mx-auto">
-                <div class="admision-circle-inner">
-                  <h2>4</h2>
-                </div>
-              </div>
-              <h3 class="my-4 text-center">Prep-course + <br>Examen Final</h3>
-            </div>
-            <div class="admision-box">
-              <div class="admision-circle mx-auto">
-                <div class="admision-circle-inner">
-                  <h2>5</h2>
-                </div>
-              </div>
-              <h3 class="my-4 text-center">Training <br>Camp</h3>
-            </div>
+
           </div>
         </div>
       </div>
@@ -216,7 +298,7 @@
             <a class="circle-link" href="#"><img src="../assets/images/ic-twitter.svg" alt=""></a>
           </div>
           <ul class="menu pl-0 text-md-right mb-2 mt-auto">
-            <li class="menu-item"> <a href="#">WhatsApp: +54 911 2233 2233</a> </li>
+            <li class="menu-item mt-3"> <a href="#">WhatsApp: +54 911 2233 2233</a> </li>
           </ul>
         </div>
       </div>

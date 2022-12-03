@@ -1,6 +1,10 @@
 @use "vars" as v;
 @import "mixins";
 
+.navbar {
+  background: v.$c-primary;
+}
+
 .navbar .navbar-brand img {
   width: 183px;
   height: auto;
@@ -11,14 +15,14 @@
   color: #ffffff !important;
 }
 
-header {
+/* header {
   &.header {
     display: flex;
     align-items: center;
     height: 68px;
     background: v.$c-primary;
   }
-}
+} */
 
 .btn {
   &.ba-primary {
@@ -235,13 +239,22 @@ header {
 }
 
 .section-admision {
-  .bar-degree {
+  .bar-degree-horizontal {
     width: 90%;
     height: 4px;
     position: absolute;
     background: linear-gradient(0deg, #005bfc 24.79%, #ff0000 74.01%);
     left: 46%;
     transform: translate(-45%, 60px);
+    z-index: -2;
+  }
+  .bar-degree-vertical {
+    width: 4px;
+    height: 702px;
+    position: absolute;
+    background: linear-gradient(90deg, #005bfc 24.79%, #ff0000 74.01%);
+    left: 50%;
+    transform: translate(0, 60px);
     z-index: -2;
   }
   .admision-circle {
@@ -357,7 +370,7 @@ header {
     overflow-y: overlay;
     max-height: 283.59px;
     &::-webkit-scrollbar {
-      width: 4px; /* Tamaño del scroll en vertical */
+      width: 4px;
     }
     &::-webkit-scrollbar-thumb {
       background: v.$c-secondary;
@@ -454,5 +467,25 @@ header {
     .card-course {
       position: relative;
     }
+  }
+  .section-courses .card-course {
+    max-width: fit-content;
+  }
+
+  .admision-circle {
+    transform: scale(0.8);
+  }
+
+  .section-admision {
+    h3 {
+      font-size: v.$f-medium;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .section-hero {
+    background-position: center;
+    background-size: cover;
   }
 }
