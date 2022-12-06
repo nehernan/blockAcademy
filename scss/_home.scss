@@ -553,11 +553,10 @@ section.team {
                     height: 35px;
                 }
             }
-            h2 {
-                font-size: 50px;
-            }
+            h2,
             p {
                 font-size: 50px;
+                z-index: 2;
             }
         }
     }

@@ -540,11 +540,10 @@ section.team .card-team .img-container img {
     width: 35px;
     height: 35px;
   }
-  .promo-cash h2 {
-    font-size: 50px;
-  }
+  .promo-cash h2,
   .promo-cash p {
     font-size: 50px;
+    z-index: 2;
   }
   section.trainingCamps {
     padding: 600px 0 5rem;
