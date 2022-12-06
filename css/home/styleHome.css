@@ -66,6 +66,12 @@ body {
   font-family: "Inter";
   line-height: 22px;
 }
+.text-inter_14 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #122024;
+  font-family: "Inter";
+}
 
 .btn-generic {
   display: flex;
@@ -132,6 +138,7 @@ body {
 }
 
 .header-home {
+  overflow: hidden;
   height: 960px;
   padding-top: 80px;
   background: linear-gradient(180deg, #005AFA 0%, #FF0000 100%);
@@ -161,6 +168,7 @@ body {
 
 .promo {
   position: absolute;
+  top: -200px;
 }
 .promo .container {
   background-color: #ffffff;
@@ -202,12 +210,12 @@ body {
 }
 
 section {
-  margin-bottom: 5rem;
+  padding: 5rem 0;
 }
 section.trainingCamps {
   margin-bottom: 0;
-  padding: 300px 0 5rem;
-  background-color: #efd1eb;
+  padding: 250px 0 5rem;
+  background-color: #ffffff;
   border-radius: 20px;
 }
 section.team {
@@ -286,6 +294,7 @@ section.team {
 
 .certifiedTrainee {
   margin: 100px 0;
+  padding: 0;
 }
 .certifiedTrainee-info {
   background-color: #122024;
@@ -304,7 +313,7 @@ section.team {
 }
 
 .section-courses {
-  background: #e6efff;
+  background-color: #E9CBE5;
 }
 .section-courses h2 {
   font-family: "Titillium Web";
@@ -440,6 +449,14 @@ section.team .card-team .img-container {
 section.team .card-team .img-container img {
   width: 100%;
   object-fit: cover;
+}
+section.team .card-team_info--text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #122024;
+  line-height: 18px;
+  display: block;
+  height: 55px;
 }
 
 .footer {
