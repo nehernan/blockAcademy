@@ -505,6 +505,10 @@ section.team {
         text-align: center;
         margin-top: 20px;
     }
+    .navbar-brand img {
+        height: 1.6rem !important;
+        width: auto;
+    }
     .collapse,
     .navbar-nav {
         padding: 0.75rem 0;
@@ -518,8 +522,9 @@ section.team {
     }
     .header-home {
         .welcome {
+            margin-top: -100px;
             &-title {
-                font-size: 3.2rem;
+                font-size: 2rem !important;
             }
             &-text {
                 @include fontStyle(v.$f-subtitle,

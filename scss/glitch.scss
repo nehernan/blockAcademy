@@ -1,0 +1,19 @@
+svg {
+    //  width: 600px;
+    display: block;
+    position: relative;
+    overflow: visible;
+    //margin: 0 auto;
+    background: rgba(0, 0, 0, 0);
+    text {
+        font-size: 5.5rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    svg {
+        text {
+            font-size: 3rem !important;
+        }
+    }
+}
