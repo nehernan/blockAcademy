@@ -112,6 +112,72 @@
   background: v.$c-gray-EB;
 }
 
+.font {
+  &-primary {
+    font-family: v.$font-primary;
+  }
+  &-secondary {
+    font-family: v.$font-secundary;
+  }
+}
+
+.fs- {
+  &10 {
+    font-size: v.$f-xsmall;
+  }
+  &11 {
+    font-size: v.$f-small;
+  }
+  &12 {
+    font-size: v.$f-xregular;
+  }
+  &13 {
+    font-size: v.$f-regular;
+  }
+  &14 {
+    font-size: v.$f-xmedium;
+  }
+  &16 {
+    font-size: v.$f-medium;
+  }
+  &18 {
+    font-size: v.$f-big;
+  }
+  &20 {
+    font-size: v.$f-subtitle;
+  }
+  &22 {
+    font-size: v.$f-title;
+  }
+  &28 {
+    font-size: v.$f-extra-big;
+  }
+  &40 {
+    font-size: v.$f-title-40;
+  }
+}
+
+.fw- {
+  &ligth {
+    font-weight: v.$ligth;
+  }
+  &regular {
+    font-weight: v.$regular;
+  }
+  &normal {
+    font-weight: v.$normal;
+  }
+  &medium {
+    font-weight: v.$medium;
+  }
+  &bold {
+    font-weight: v.$bold;
+  }
+  &xlbold {
+    font-weight: v.$xl-bold;
+  }
+}
+
 .section-hero,
 .section-hero-detail {
   background: v.$c-primary;

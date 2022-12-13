@@ -125,6 +125,66 @@
   background: #ebebeb;
 }
 
+.font-primary {
+  font-family: "Titillium Web";
+}
+.font-secondary {
+  font-family: "Inter";
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+.fs-11 {
+  font-size: 11px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+
+.fw-ligth {
+  font-weight: 200;
+}
+.fw-regular {
+  font-weight: 300;
+}
+.fw-normal {
+  font-weight: 400;
+}
+.fw-medium {
+  font-weight: 500;
+}
+.fw-bold {
+  font-weight: 600;
+}
+.fw-xlbold {
+  font-weight: 700;
+}
+
 .section-hero,
 .section-hero-detail {
   background: #122024;
