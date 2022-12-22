@@ -76,10 +76,18 @@ body {
         font-size: v.$f-subtitle;
         border-radius: 8px;
         background: v.$c-blue-00;
+        border: none;
+        &:hover {
+            background: #0039b4;
+        }
     }
     &-red {
         background-color: v.$c-red;
         color: v.$c-white;
+        &:hover {
+            color: v.$c-white;
+            background-color: rgb(218, 0, 0);
+        }
     }
 }
 
