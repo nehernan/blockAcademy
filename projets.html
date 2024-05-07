@@ -1,0 +1,15 @@
+<!-- Landing -->
+<div fxLayout='row' fxLayoutAlign='space-between center' class='stepper-title'>
+      <ng-container *ngFor='let i of [1,2,3,4,5]'>
+        <div class='stepper-state {{activeClass(i)}}'><span class='stepper-state-content'>{{i}}</span></div>
+        <span class='line {{activeClass(i + 1)}}' *ngIf='i != 5'></span>
+      </ng-container>
+    </div>
+    <div fxLayout='row' fxLayoutAlign='space-between center' class='stepper-label'>
+      <div i18n>Datos personales</div>
+      <div i18n>Test de Inglés</div>
+      <div i18n>Test de Lógica</div>
+      <div i18n>Prep-course + Challenge</div>
+      <div i18n>Bienvenida Training Camp</div>
+    </div>
+  </div>
